@@ -165,10 +165,14 @@ body {
 	margin-right: 0%;
 }
 
-.image-switch:hover img:last-child {
+h2 {
+	font-size: 8vw;
+}
+
+.image-switch:last-child {
   display: none;  
 }
-.image-switch:hover img:first-child {
+.image-switch:first-child {
   display: block;  
 }
 .md-lr-margin {
