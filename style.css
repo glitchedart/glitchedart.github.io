@@ -46,7 +46,13 @@ nav a {
 	background-color: rgba(35, 137, 47,0.3);
 }
 
+nav a:hover {
+	color: rgb(180,220,180);
+	background-color: rgb(50,90,50);
+}
+
 nav .selected {
+	color: rgb(180,220,180);
 	background-color: rgb(60,100,60);
 }
 
@@ -65,10 +71,25 @@ main {
 	margin-bottom: 4vw;
 	align-items: center;
 }
+.image-switch img:last-child {
+  display: none;  
+}
+.image-switch:hover img:last-child {
+  display: block;  
+}
+.image-switch:hover img:first-child {
+  display: none;  
+}
 
-main .right-image {
-	width: 1%;
-	padding: 9%;
+main .right-image { 
+	margin-left: 2vw;
+	margin-top: 2vw;
+	text-align: center;
+}
+main .right-image img {
+	width: 75%;
+	margin: auto;
+	
 }
 
 main .left-content {
@@ -79,6 +100,7 @@ main .left-content {
 main * {
 	flex: 1;
 }
+
 
 .debug {
 	border: 3px solid green;
@@ -122,7 +144,7 @@ main {
 	flex-direction: column;
 }
 
-main .right-image {
+.right-image {
 	width: 65vw;
 	margin-top: 4vw;
 	padding: 0px;
@@ -132,6 +154,10 @@ nav a {
 	margin-top: 0.2vw;
 	margin-left: 0%;
 	margin-right: 0%;
+}
+
+main .left-content {
+	font-size: 4vw;
 }
 
 body {
