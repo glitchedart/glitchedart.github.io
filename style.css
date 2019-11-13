@@ -165,6 +165,12 @@ body {
 	margin-right: 0%;
 }
 
+.image-switch:hover img:last-child {
+  display: none;  
+}
+.image-switch:hover img:first-child {
+  display: block;  
+}
 .md-lr-margin {
 	margin-left: 2%;
 	margin-right: 2%;
