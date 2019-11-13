@@ -17,6 +17,27 @@ html, body {
 	overflow-x:hidden;
 }
 
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4vw;
+	visibility: visible;
+	flex-basis: min-content;
+	overflow-y: visible;
+}
+
+.gallery .image-switch img {
+
+	width: 30vw;
+	height: 30vw;
+	margin: 1vw;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Hacked';
 	font-size: 8vw;
@@ -71,6 +92,7 @@ main {
 	margin-bottom: 4vw;
 	align-items: center;
 }
+
 .image-switch img:last-child {
   display: none;  
 }
@@ -129,48 +151,57 @@ main * {
 /* mobile */
 @media (max-width: 720px) {
 
-nav {
-	justify-content: center;
-	flex-direction: column;
-}
+	nav {
+		justify-content: center;
+		flex-direction: column;
+	}
 
-main {
-	flex-direction: column;
-}
+	main {
+		flex-direction: column;
+	}
 
-.right-image {
-	width: 100vw;
-	margin-top: 4vw;
-	padding: 0px;
-}
-nav a {
-	font-size: 5vw;
-	margin-top: 0.2vw;
-	margin-left: 0%;
-	margin-right: 0%;
-}
+	.right-image {
+		width: 100vw;
+		margin-top: 4vw;
+		padding: 0px;
+	}
+	nav a {
+		font-size: 5vw;
+		margin-top: 0.2vw;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 
-main .left-content {
-	font-size: 4vw;
-}
+	main .left-content {
+		font-size: 4vw;
+	}
 
-body {
-	margin-left: 0%;
-	margin-right: 0%;
-}
+	body {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 
-h2 {
-	font-size: 8vw;
-}
+	h2 {
+		font-size: 8vw;
+	}
+	.image-switch img:last-child {
+	  display: none;  
+	}
+	.image-switch img:first-child {
+	  display: block;  
+	}
 
-.image-switch:last-child {
-  display: none;  
-}
-.image-switch:first-child {
-  display: block;  
-}
-.md-lr-margin {
-	margin-left: 2%;
-	margin-right: 2%;
-}
+	.gallery .image-switch img{
+		width: 60vw;
+		height: 50vw;
+	}
+	.md-lr-margin {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.gallery {
+		flex-direction: column;
+	}
+
 }
