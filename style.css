@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+html, body {
+	overflow-x: hidden;
+	font-family: 'Lato', monospace;
+	background-color: rgb(23, 28, 26);
+	color: rgb(55, 150, 67);
+	width: 100%;
+	overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Hacked';
+	font-size: 8vw;
+	margin: auto;
+	margin-bottom: 0px;
+	padding-bottom: 0.7%;
+	padding-top: 3.7%;
+}
+
+h2 {
+	font-size: 4vw;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a { 
+	text-decoration: none;
+	color: rgb(85, 187, 97);
+	font-size: 2.5vw;
+	margin: 0.25vw;
+	text-align: center;
+	flex: 1;
+	padding-top: 1vw;
+	background-color: rgba(35, 137, 47,0.3);
+}
+
+nav .selected {
+	background-color: rgb(60,100,60);
+}
+
+/* Gradient transparent - color - transparent */
+hr {
+    border: 0;
+    height: 0.21vw;
+    background-image: linear-gradient(to right, rgba(55,160,67, 0.002), rgba(50,160,67, 0.75), rgba(55, 160, 67, 0.002));
+    border-color: rgb(185, 226, 290);
+    margin-top: 0.4vw;
+    margin-bottom: 2vw;
+}
+
+main {
+	display: flex;
+	margin-bottom: 4vw;
+	align-items: center;
+}
+
+main .right-image {
+	width: 1%;
+	padding: 9%;
+}
+
+main .left-content {
+	font-size: 2.5vw;
+	margin-left: 2.5vw;
+}
+
+main * {
+	flex: 1;
+}
+
+.debug {
+	border: 3px solid green;
+}
+
+.sm-lr-margin {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.md-lr-margin {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.lg-lr-margin {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+.center {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+
+h1 {
+	font-size: 14vw;
+}
+}
+/* mobile */
+@media (max-width: 720px) {
+
+nav {
+	justify-content: center;
+	flex-direction: column;
+}
+
+main {
+	flex-direction: column;
+}
+
+main .right-image {
+	width: 65vw;
+	margin-top: 4vw;
+	padding: 0px;
+}
+nav a {
+	font-size: 5vw;
+	margin-top: 0.2vw;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+body {
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.md-lr-margin {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+}

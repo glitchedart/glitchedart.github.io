@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div class="md-lr-margin">
+
+		<header>
+			<h1 id="title" class="center">glitch_Art</h1>
+			<nav class="lg-lr-margin">
+				<a class="selected" href="#" >Intro</a>
+				<a href="#" >Gallery</a>
+				<a href="#">Tools</a>
+			</nav>
+			<hr>
+		</header>
+
+		<main>
+			<div class="left-content">
+				<h2> What is it? </h2>
+				<p > Glitch Art is art that is created through "Data Bending" - The process of digitally manipulating an image file in an unusual way. By doing this, you can create unique images by taking advantage of the way computers work.</p>
+				<br>
+				<p> It's fun and easy to create. Anyone with a computer can do this with free software. You don't need strong computer or art skills for this. 
+				</p>
+			</div>
+			<img class="right-image"  src="city_g.jpg">
+		</main>
+	</div>
+
+
+
+
+	<script>
+	t = document.getElementById("title");
+	
+	function undoGlitchEffect() {
+		t.style.opacity = "100";
+	}
+
+	function undoGlitchPadding() {
+		t.style.marginLeft = "0vw";
+		t.style.marginRight = "0vw";
+	}
+	
+	function glitchPadding() {
+		bool = Math.random() * 10 < 6;
+		// left
+		if (bool) {
+			t.style.marginLeft = "4vw";
+		//right
+		} else {
+			t.style.marginRight = "4vw";
+			
+		}
+		setTimeout(() => {undoGlitchPadding()},Math.random() * 200 + 50);
+	}
+
+	function glitchOpacity() {
+		t.style.opacity = "0";
+		setTimeout(() => {undoGlitchEffect()},Math.random() * 200 + 100);
+	}
+	
+	function randomGlitch() {
+		rand = Math.random() * 10;
+
+		if (rand > 9) { 
+			glitchPadding();
+		} else if (rand > 7) {
+			glitchOpacity();
+		}
+
+	}
+	setInterval(randomGlitch,200);
+
+	</script>
+
+	</body>
+</html>
