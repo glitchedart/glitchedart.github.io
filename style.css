@@ -126,12 +126,6 @@ main * {
   text-align: center;
 }
 
-@media (max-width: 960px) {
-
-h1 {
-	font-size: 14vw;
-}
-}
 /* mobile */
 @media (max-width: 720px) {
 
@@ -145,7 +139,7 @@ main {
 }
 
 .right-image {
-	width: 65vw;
+	width: 100vw;
 	margin-top: 4vw;
 	padding: 0px;
 }
